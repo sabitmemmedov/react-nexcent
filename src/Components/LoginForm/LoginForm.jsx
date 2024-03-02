@@ -1,17 +1,16 @@
+
 import React, { useState, useEffect } from 'react';
 import { Formik, Form, Field } from 'formik';
 import axios from 'axios';
-import SignUpValidation from '../SignUpForm//SignUpValidation';
+import * as Yup from 'yup';
 import styles from '../SignUpForm/SignUpForm.module.css';
 
 const initialValues = {
-  name: "",
   email: "",
   password: "",
-  cpassword: "",
 };
 
-const LoginForm = () => {
+const LoginForm = ({ onClose }) => {
   const [users, setUsers] = useState([]);
   const [isPosting, setIsPosting] = useState(false);
 
@@ -26,25 +25,24 @@ const LoginForm = () => {
     };
 
     fetchUsers();
-  }, [isPosting]); 
+  }, [isPosting]);
 
   const handleSubmit = async (values, actions) => {
     try {
-      setIsPosting(true); 
+      setIsPosting(true);
 
-      const userWithEmail = users.find(user => user.email === values.email);
-      if (userWithEmail) {
-        alert("This email is already in use!");
-      } else {
-        await axios.post("https://6569b50bde53105b0dd78115.mockapi.io/users", values);
-        alert("Registration successful!");
+      const user = users.find(user => user.email === values.email && user.password === values.password);
+      if (user) {
+        alert("Giriş yapıldı!"); 
         actions.resetForm();
+      } else {
+        alert("Email or password is incorrect!");
       }
     } catch (error) {
       console.error("Error:", error);
-      alert("An error occurred while registering. Please try again later.");
+      alert("An error occurred while logging in. Please try again later.");
     } finally {
-      setIsPosting(false); 
+      setIsPosting(false);
       actions.setSubmitting(false);
     }
   };
@@ -53,12 +51,14 @@ const LoginForm = () => {
     <div className={styles.formBox}>
       <Formik
         initialValues={initialValues}
-        validationSchema={SignUpValidation}
+        validationSchema={Yup.object({
+          email: Yup.string().email('Invalid email address').required('Please Enter Email'),
+          password: Yup.string().required('Please Enter Password'),
+        })}
         onSubmit={handleSubmit}
       >
         {({ errors, isSubmitting }) => (
           <Form className={styles.form}>
-         
             <label htmlFor='email'>Email</label>
             <br />
             <Field className={styles.inp} type="email" name="email" />
@@ -71,7 +71,6 @@ const LoginForm = () => {
             <br />
             {errors.password && <small className={styles.error}>{errors.password}</small>}
             <br />
-           
             <button className={styles.submitBtn} type='submit' disabled={isSubmitting || isPosting}>Submit</button>
           </Form>
         )}

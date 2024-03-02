@@ -20,7 +20,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example({ openModal }) {
+export default function Example({ openModal}) {
   return (
     <Disclosure as="nav" style={{ backgroundColor: '#F5F7FA',padding:'0' }}>
       {({ open }) => (
@@ -102,5 +102,4 @@ export default function Example({ openModal }) {
     </Disclosure>
   )
 }
-
 

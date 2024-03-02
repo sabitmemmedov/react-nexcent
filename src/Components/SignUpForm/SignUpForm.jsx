@@ -11,7 +11,7 @@ const initialValues = {
   cpassword: "",
 };
 
-const SignUpForm = () => {
+const SignUpForm = ({onClose}) => {
   const [users, setUsers] = useState([]);
   const [isPosting, setIsPosting] = useState(false);
 
