@@ -46,6 +46,7 @@ export default function Example({ openModal}) {
                     src={Logo}
                     alt="Your Company"
                   />
+                     <span className={styles.logoText}>Nexcent</span>
                 </div>
               </div>
               <div className="flex justify-center flex-1 items-center">
@@ -55,6 +56,7 @@ export default function Example({ openModal}) {
                     src={Logo}
                     alt="Your Company"
                   />
+               
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">

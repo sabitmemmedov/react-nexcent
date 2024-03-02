@@ -14,10 +14,19 @@
   font-weight: 500;
   color: #409643;
 }
+.logoText{
+  display: inline-block;
+  font-weight: 700;
+  color: #263238;
+  font-size: 20px;
+  margin-left: 10px;
+}
 
 
 @media screen and (max-width:800px){
-
+  .logoText{
+    display: none;
+  }
   .signupBtn{
     width: 80px;
     border-radius: 6px;
@@ -36,3 +45,5 @@
     font-size: 14px;
   }
 }
+
+
