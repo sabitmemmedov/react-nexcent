@@ -1,0 +1,75 @@
+.footer{
+    background-color: #263238;
+    padding: 40px 0;
+}
+.mContent{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.logo{
+    padding-bottom: 20px;
+}
+.p{
+    color: #fff;
+}
+
+.socialLinks{
+    padding: 40px 0 0 0 ;
+    display: flex;
+    gap: 15px;
+}
+.socialLink{
+    width: 32px;
+    height: 32px;
+    background-color: #3B464C;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerRight{
+    display: flex;
+    gap: 40px;
+    color: #fff;
+    flex-wrap: wrap;
+}
+.footerMenu{
+    padding: 0;
+}
+.menuItem{
+    color: #F5F7FA;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 5px 0;
+    position: relative;
+
+}
+ 
+.itemsTitle{
+    font-size: 20px;
+    font-weight: 600;
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+.inp{
+    width: 255px;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 0 30px 0 15px;
+    border-radius: 6px;
+    background-color: #515B60;
+    outline: 0;
+}
+.inplogo{
+    position: absolute;
+    top: 16px;
+    right: 10px;
+    z-index: 100;
+}

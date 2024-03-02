@@ -1,0 +1,73 @@
+.customersSection{
+    padding: 40px 0;
+    background-color: #F5F7FA;
+}
+.mContent{
+    display: flex;
+}
+.imgBox{
+    width:35%;
+    margin: 0 auto;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+.textBox{
+    padding: 10px;
+    width: 65%;
+    margin: 0 auto;
+}
+.h4{
+    font-size: 20px;
+    color: #4CAF4F;
+    padding-bottom: 20px;
+    font-weight: 600;
+}
+.p{
+    font-size: 16px;
+    color: #717171;
+    padding-bottom: 20px;
+}
+.h6{
+    color: #89939E;
+    font-size: 16px;
+    padding-bottom: 40px;
+}
+.logos{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.span{
+    width: auto;
+    display: flex;
+    align-items: center;    
+    gap: 10px;
+    color: #4CAF4F;
+    font-weight: 600;
+}
+
+.rightImg{
+    padding-top: 2px;
+    box-sizing: border-box;
+    height: 10px;
+    width: 14px;
+    background-size: cover;
+}
+.img{
+    width: 100%;
+}
+@media screen and (max-width:700px) {
+    .mContent{
+        display: block;
+    }
+    .imgBox{
+        width: 100%;
+    }
+
+    .textBox{
+        width: 100%;
+    }
+ 
+}

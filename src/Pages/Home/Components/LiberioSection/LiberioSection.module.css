@@ -1,0 +1,23 @@
+.liberioSection{
+    padding: 60px 0;
+    background-color: #F5F7FA;
+}
+.mContent{
+    text-align: center;
+}
+.title{
+    max-width: 887px;
+    margin: 0 auto  ;
+    padding: 40px   ;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 1.2;
+    padding: 0 0 40px 0 ;
+}
+
+
+@media screen and (max-width:700px){
+    .title{
+        font-size: 40px;
+    }
+}

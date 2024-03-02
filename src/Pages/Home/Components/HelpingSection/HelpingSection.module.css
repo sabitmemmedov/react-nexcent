@@ -1,0 +1,67 @@
+.helpingSection{
+    padding: 40px 0;
+    background-color: #F5F7FA;
+}
+.h2{
+    font-size: 36px;
+    font-weight: 600;
+}
+.h3{
+    font-size: 36px;
+    font-weight: 600;
+    color: #4CAF4F;
+
+}
+.mContent{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.cardsBox{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cardBox{
+    padding: 0 10px;
+    margin:  0 auto;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.textBox{
+    padding: 10px;
+}
+.cardTitle{
+    color: #4D4D4D;
+    font-size: 28px;
+    font-weight: 700;
+}
+.subTitle{
+    color: #18191F;
+    font-size: 16px;
+    font-weight: 400;
+}
+@media screen and (max-width:700px) {
+    .mContent{
+        display: block;
+    }
+    .cardBox{
+        width: 255px;
+        margin: 0 auto;
+        padding: 0;
+
+
+        
+    }
+    .cardsBox{
+
+        display: flex;
+        padding-top: 30px;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+
+    }
+}

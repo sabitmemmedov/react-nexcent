@@ -1,0 +1,35 @@
+.pixelgradeSection{
+    padding: 20px 0;
+}
+.mContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.imgBox{
+    width: 40%;
+}
+.textBox{
+    width: 50%;
+}
+ .h2{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1;
+    padding-bottom: 30px;
+ }
+
+@media screen and (max-width:700px) {
+    .mContent{
+        display: block;
+    }
+    .imgBox{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .textBox{
+        width: 100%;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,25 @@
+.clientSection{
+    background-color: #fff;
+    padding: 60px 0;
+}
+.headText{
+    text-align: center;
+}
+
+.h2{
+    font-size: 36px;
+    font-weight: 600;
+}
+.p{
+    font-size: 18px;
+    color: rgb(169, 168, 168);
+    font-weight: 400;
+}
+.cards{
+
+    display: flex;
+    justify-content: space-evenly;
+    padding: 60px 0;
+    flex-wrap: wrap;
+    gap: 20px;
+}

@@ -1,0 +1,50 @@
+.heroSection{
+    padding: 80px 0;
+    background-color: #F5F7FA;
+}
+.h1{
+    color: #4D4D4D;
+    font-size: 64px;
+    font-weight: 600;
+   
+}
+.h2{
+    color: #4CAF4F;
+    font-size: 64px;
+    font-weight: 600;
+}
+.p{
+    margin-bottom: 40px;
+}
+.mContent{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+}
+
+@media screen and (max-width:790px) {
+    .heroSection{
+        padding: 40px 0;
+    }
+    .mContent{
+        padding: 30px 10px;
+    }
+    .h1{
+        font-size: 45px;
+    }
+    .h2{
+        font-size: 45px;
+    }
+    .mContent{
+        display: block;
+ 
+    }
+    .colImg{
+        padding-top: 40px ;
+        display: flex;
+        justify-content: center;
+    }
+    .colImg img{
+        width: 80%;
+    }
+}
